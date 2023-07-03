@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/movie_model.dart';
 import '../widgets/movie_list_item.dart';
+import 'movie_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class HomeScreen extends StatelessWidget {
           child: Container(
             height: 150,
             width: MediaQuery.of(context).size.width,
-            color: const Color(0xFF000B49),
+            color: Colors.orange,
             child: Center(
               child: Text("Explore",
                   style: Theme.of(context).textTheme.headlineSmall!.copyWith(
@@ -55,11 +56,21 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               for (final movie in movies)
-                MovieListItem(
-                  imageUrl: movie.imagePath,
-                  name: movie.name,
-                  information:
-                      '${movie.year} | ${movie.category} | ${movie.duration.inHours}h ${movie.duration.inMinutes.remainder(60)}m',
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MovieScreen(movie: movie),
+                      ),
+                    );
+                  },
+                  child: MovieListItem(
+                    imageUrl: movie.imagePath,
+                    name: movie.name,
+                    information:
+                        '${movie.year} | ${movie.category} | ${movie.duration.inHours}h ${movie.duration.inMinutes.remainder(60)}m',
+                  ),
                 ),
             ],
           ),

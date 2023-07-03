@@ -1,7 +1,7 @@
 class Movie {
   final String name;
   final String imagePath;
-  //final String videoPath;
+  final String videoPath;
   final String category;
   final int year;
   final Duration duration;
@@ -9,7 +9,7 @@ class Movie {
   const Movie({
     required this.name,
     required this.imagePath,
-    //required this.videoPath,
+    required this.videoPath,
     required this.category,
     required this.year,
     required this.duration,
@@ -19,15 +19,17 @@ class Movie {
     Movie(
       name: "Dune: Part Two",
       imagePath:
-          "https://4kwallpapers.com/images/wallpapers/dune-part-two-2560x1440-11349.jpg",
+          "https://i0.wp.com/www.seenit.co.uk/wp-content/uploads/DUNE-2.jpg?fit=1200%2C675&ssl=1",
+      videoPath: "assets/videos/dune.mp4",
       category: "Action",
       year: 2023,
-      duration: Duration(hours: 3, minutes: 0),
+      duration: Duration(hours: 2, minutes: 47),
     ),
     Movie(
       name: "Oppenheimer",
       imagePath:
-          "https://a-static.besthdwallpaper.com/actor-in-hat-in-fire-and-fog-oppenheimer-movie-poster-wallpaper-2560x1440-107792_51.jpg",
+          "https://a-static.besthdwallpaper.com/actor-in-hat-in-fire-and-fog-oppenheimer-movie-poster-wallpaper-1440x1080-107792_22.jpg",
+      videoPath: "assets/videos/dune.mov",
       category: "Drama",
       year: 2023,
       duration: Duration(hours: 3, minutes: 0),
@@ -35,7 +37,8 @@ class Movie {
     Movie(
       name: "Barbie",
       imagePath:
-          "https://images.wallpapersden.com/image/download/margot-robbie-barbie-movie-2022_bWhlbGWUmZqaraWkpJRnamtlrWZpaWU.jpg",
+          "https://a-static.besthdwallpaper.com/margot-robbie-in-the-pink-car-in-the-barbie-movie-wallpaper-1440x1080-108488_22.jpg",
+      videoPath: "assets/videos/dune.mov",
       category: "Adventure",
       year: 2023,
       duration: Duration(hours: 1, minutes: 54),
@@ -43,7 +46,8 @@ class Movie {
     Movie(
       name: "Spider-Man: Across the Spider-Verse",
       imagePath:
-          "https://images.hdqwalls.com/download/spider-man-across-the-spider-verse-2023-10k-9m-2560x1440.jpg",
+          "https://a-static.besthdwallpaper.com/miles-morales-from-spider-man-across-the-spider-verse-2023-animation-movie-wallpaper-1440x1080-109942_22.jpg",
+      videoPath: "assets/videos/dune.mov",
       category: "Action",
       year: 2023,
       duration: Duration(hours: 2, minutes: 20),
@@ -51,22 +55,26 @@ class Movie {
     Movie(
       name: "The Batman",
       imagePath:
-          "https://wallpapersmug.com/download/2560x1440/556921/the-batman-2022.jpg",
+          "https://images.axios.com/LB7bC-TB4SjABGgUjGeRxXAFsoQ=/0x0:5333x4000/1440x1080/2022/03/06/1646596484602.jpg",
+      videoPath: "assets/videos/dune.mov",
       category: "Action",
       year: 2022,
       duration: Duration(hours: 2, minutes: 56),
     ),
     Movie(
-      name: "Mission: Impossible - Dead Reckoning Part One",
+      name: "M:I - Dead Reckoning Part One",
       imagePath:
-          "https://4kwallpapers.com/images/wallpapers/mission-impossible-2560x1440-11684.jpg",
+          "https://w0.peakpx.com/wallpaper/633/64/HD-wallpaper-2023-mission-impossible-dead-reckoning-part-one-mission-impossible-dead-reckoning-part-one-mission-impossible-tom-cruise-2023-movies-movies.jpg",
+      videoPath: "assets/videos/dune.mov",
       category: "Action",
       year: 2023,
       duration: Duration(hours: 2, minutes: 43),
     ),
     Movie(
-      name: "The Banshees of Inısherin",
-      imagePath: "https://images.alphacoders.com/126/1260105.jpg",
+      name: "The Banshees of Inisherin",
+      imagePath:
+          "https://media.gq-magazine.co.uk/photos/63c584132c92b167ca2b1949/4:3/w_1440,h_1080,c_limit/Banshees-of-Inisherin-HEADER.jpg",
+      videoPath: "assets/videos/dune.mov",
       category: "Drama",
       year: 2022,
       duration: Duration(hours: 1, minutes: 54),
@@ -74,7 +82,8 @@ class Movie {
     Movie(
       name: "Everything Everywhere All At Once",
       imagePath:
-          "https://fox56news.com/wp-content/uploads/sites/24/2022/11/e3e8f7f9b14b40e19a57f21ec958beab.jpg?w=2560&h=1440&crop=1",
+          "https://lightbox-prod.imgix.net/images/assets/100343594-8401869-Everything_Everywhere_All_at_Once_2022_STV1_-_62CAE618-CF89-48F1-8B67792C507B6E6A.jpg",
+      videoPath: "assets/videos/dune.mov",
       category: "Action",
       year: 2022,
       duration: Duration(hours: 2, minutes: 10),
